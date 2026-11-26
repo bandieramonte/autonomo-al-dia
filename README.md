@@ -33,7 +33,7 @@
 - **Explainability and provenance:** every result carries the rules version and inputs behind it, plus a plain-language reason.
 - **Reliable AI pipelines:** background jobs with retries and progress, replayable stages with the same result every time.
 - **Responsible AI and privacy:** EU data hosting, minimum data sent to AI providers, no training on customer documents.
-- **AI-native engineering:** built with Claude Code run as a coordinated team of agents (parallel sessions, sub-agents, isolated worktrees) under a written operating manual and automated checks.
+- **AI-native engineering:** built with AI coding agents run as a coordinated team (parallel sessions, sub-agents, isolated worktrees) under a written operating manual and automated checks.
 - **AI-assisted legal research:** agents research Spanish tax law against a strict hierarchy of official sources, and tests check that the code matches the research.
 
 ## A tax engine built like a tax adviser
