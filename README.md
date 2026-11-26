@@ -24,12 +24,12 @@
 ## AI expertise behind it
 
 - **Multimodal extraction with structured outputs:** PDFs, scans and photos read into a strict JSON schema, with large schemas split into parallel calls.
-- **Provider-agnostic model layer:** Anthropic Claude or OpenAI, switched in configuration with no rebuild or restart.
+- **Provider-agnostic model layer:** AI providers and models switched in configuration, with no rebuild or restart.
 - **Novel assessment architecture:** an original arrangement of AI models that judges each document's tax meaning. Design kept private.
 - **Hybrid AI and deterministic design:** AI only where a real semantic judgment is needed; OCR, PDF text and XML parsing do the rest, and the law runs in code, never in a model.
 - **Cost engineering:** prompt caching, AI results cached by their inputs so an edit never repeats a call, per-user usage caps and rate limits.
 - **Evaluation:** labelled datasets measure AI accuracy, and a regression corpus pins every tax figure so any change that moves one is caught.
-- **Human in the loop:** every fact records its source; users review and correct any value, and each correction is audited and recalculated at once.
+- **Corrections with an audit trail:** every fact records its source; users can correct any value, and each correction is audited and recalculated at once.
 - **Explainability and provenance:** every result carries the rules version and inputs behind it, plus a plain-language reason.
 - **Reliable AI pipelines:** background jobs with retries and progress, replayable stages with the same result every time.
 - **Responsible AI and privacy:** data kept in the EU, minimum data sent to AI providers, no training on customer documents.
@@ -51,4 +51,4 @@
 
 ## Stack
 
-Next.js (TypeScript, Tailwind, shadcn/ui) · ASP.NET Core (C#, .NET 10) · EF Core · PostgreSQL on Supabase (EU) · Anthropic Claude and OpenAI · Tesseract OCR · versioned OpenAPI contract, ready for mobile apps
+Next.js (TypeScript, Tailwind, shadcn/ui) · ASP.NET Core (C#, .NET 10) · EF Core · PostgreSQL on Supabase (EU) · LLM APIs · Tesseract OCR · versioned OpenAPI contract, ready for mobile apps
